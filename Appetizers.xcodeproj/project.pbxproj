@@ -7,18 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD0C61D32C22787900FA2C39 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C61D22C22787900FA2C39 /* NetworkManager.swift */; };
+		BD0C61D62C22793000FA2C39 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C61D52C22793000FA2C39 /* APError.swift */; };
+		BD0C61D82C2280FE00FA2C39 /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C61D72C2280FE00FA2C39 /* AppetizerListViewModel.swift */; };
+		BD0C61DA2C22930B00FA2C39 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C61D92C22930B00FA2C39 /* Alert.swift */; };
+		BD0C61DC2C22A38F00FA2C39 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C61DB2C22A38F00FA2C39 /* LoadingView.swift */; };
+		BD0C61E02C22A70A00FA2C39 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C61DF2C22A70A00FA2C39 /* Color+Ext.swift */; };
 		BD41A1BF2C1C115D00904F9A /* AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD41A1BE2C1C115D00904F9A /* AppetizersApp.swift */; };
-		BD41A1C12C1C115D00904F9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD41A1C02C1C115D00904F9A /* ContentView.swift */; };
 		BD41A1C32C1C115F00904F9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD41A1C22C1C115F00904F9A /* Assets.xcassets */; };
 		BD41A1C62C1C115F00904F9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD41A1C52C1C115F00904F9A /* Preview Assets.xcassets */; };
+		BD41A1CD2C1C1FBE00904F9A /* AppetizerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD41A1CC2C1C1FBE00904F9A /* AppetizerListView.swift */; };
+		BD41A1CF2C1C1FC700904F9A /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD41A1CE2C1C1FC700904F9A /* AccountView.swift */; };
+		BD41A1D12C1C1FCD00904F9A /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD41A1D02C1C1FCD00904F9A /* OrderView.swift */; };
+		BD41A1D32C1C200900904F9A /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD41A1D22C1C200900904F9A /* AppetizerTabView.swift */; };
+		BD616F182C1D7643008A93E8 /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD616F172C1D7643008A93E8 /* Appetizer.swift */; };
+		BDA682522C1E885500958625 /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA682512C1E885500958625 /* AppetizerListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD0C61D22C22787900FA2C39 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BD0C61D52C22793000FA2C39 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
+		BD0C61D72C2280FE00FA2C39 /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
+		BD0C61D92C22930B00FA2C39 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		BD0C61DB2C22A38F00FA2C39 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		BD0C61DF2C22A70A00FA2C39 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		BD41A1BB2C1C115D00904F9A /* Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD41A1BE2C1C115D00904F9A /* AppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersApp.swift; sourceTree = "<group>"; };
-		BD41A1C02C1C115D00904F9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BD41A1C22C1C115F00904F9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD41A1C52C1C115F00904F9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BD41A1CC2C1C1FBE00904F9A /* AppetizerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListView.swift; sourceTree = "<group>"; };
+		BD41A1CE2C1C1FC700904F9A /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		BD41A1D02C1C1FCD00904F9A /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		BD41A1D22C1C200900904F9A /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
+		BD616F172C1D7643008A93E8 /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
+		BDA682512C1E885500958625 /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD0C61D42C22792000FA2C39 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BD0C61D52C22793000FA2C39 /* APError.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		BD41A1B22C1C115D00904F9A = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +81,21 @@
 		BD41A1BD2C1C115D00904F9A /* Appetizers */ = {
 			isa = PBXGroup;
 			children = (
+				BD0C61D42C22792000FA2C39 /* Utilities */,
 				BD41A1BE2C1C115D00904F9A /* AppetizersApp.swift */,
-				BD41A1C02C1C115D00904F9A /* ContentView.swift */,
+				BD41A1D22C1C200900904F9A /* AppetizerTabView.swift */,
 				BD41A1C22C1C115F00904F9A /* Assets.xcassets */,
 				BD41A1C42C1C115F00904F9A /* Preview Content */,
+				BD41A1CC2C1C1FBE00904F9A /* AppetizerListView.swift */,
+				BD41A1CE2C1C1FC700904F9A /* AccountView.swift */,
+				BD41A1D02C1C1FCD00904F9A /* OrderView.swift */,
+				BD616F172C1D7643008A93E8 /* Appetizer.swift */,
+				BDA682512C1E885500958625 /* AppetizerListCell.swift */,
+				BD0C61D22C22787900FA2C39 /* NetworkManager.swift */,
+				BD0C61D72C2280FE00FA2C39 /* AppetizerListViewModel.swift */,
+				BD0C61D92C22930B00FA2C39 /* Alert.swift */,
+				BD0C61DB2C22A38F00FA2C39 /* LoadingView.swift */,
+				BD0C61DF2C22A70A00FA2C39 /* Color+Ext.swift */,
 			);
 			path = Appetizers;
 			sourceTree = "<group>";
@@ -137,8 +178,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD41A1C12C1C115D00904F9A /* ContentView.swift in Sources */,
+				BD616F182C1D7643008A93E8 /* Appetizer.swift in Sources */,
+				BD0C61D62C22793000FA2C39 /* APError.swift in Sources */,
+				BDA682522C1E885500958625 /* AppetizerListCell.swift in Sources */,
+				BD0C61D82C2280FE00FA2C39 /* AppetizerListViewModel.swift in Sources */,
+				BD0C61E02C22A70A00FA2C39 /* Color+Ext.swift in Sources */,
+				BD41A1CF2C1C1FC700904F9A /* AccountView.swift in Sources */,
+				BD0C61DC2C22A38F00FA2C39 /* LoadingView.swift in Sources */,
 				BD41A1BF2C1C115D00904F9A /* AppetizersApp.swift in Sources */,
+				BD0C61D32C22787900FA2C39 /* NetworkManager.swift in Sources */,
+				BD41A1D32C1C200900904F9A /* AppetizerTabView.swift in Sources */,
+				BD0C61DA2C22930B00FA2C39 /* Alert.swift in Sources */,
+				BD41A1CD2C1C1FBE00904F9A /* AppetizerListView.swift in Sources */,
+				BD41A1D12C1C1FCD00904F9A /* OrderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +249,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +306,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -280,6 +332,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +340,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.patrick.iOS.Appetizers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -309,6 +366,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +374,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.patrick.iOS.Appetizers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
