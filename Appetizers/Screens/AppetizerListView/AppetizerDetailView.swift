@@ -9,12 +9,14 @@ import SwiftUI
 
 struct AppetizerDetailView: View {
     
+    @EnvironmentObject var  order: Order
+    
     let appetizer: Appetizer
+    @Binding var isShowingDetail: Bool
     
     var body: some View {
         VStack {
-            Image("asian-flank-steak")
-                .resizable()
+            AppetizerRemoteImage(urlString: appetizer.imageURL)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 300, height: 225)
             
@@ -29,59 +31,21 @@ struct AppetizerDetailView: View {
                     .padding()
                 
                 HStack(spacing: 40) {
-                    
-                    VStack(spacing: 5) {
-                        Text("Calories")
-                            .font(.caption)
-                            .fontWeight(.bold)
-                        
-                        Text("\(appetizer.calories)")
-                            .foregroundStyle(Color.secondary)
-                            .fontWeight(.semibold)
-                            .italic()
-                        
-                    }
-                    
-                    VStack(spacing: 5) {
-                        Text("Carbs")
-                            .font(.caption)
-                            .fontWeight(.bold)
-                        
-                        Text("\(appetizer.carbs)")
-                            .foregroundStyle(Color.secondary)
-                            .fontWeight(.semibold)
-                            .italic()
-                        
-                    }
-                    
-                    VStack(spacing: 5) {
-                        Text("Protein")
-                            .font(.caption)
-                            .fontWeight(.bold)
-                        
-                        Text("\(appetizer.protein)")
-                            .foregroundStyle(Color.secondary)
-                            .fontWeight(.semibold)
-                            .italic()
-                        
-                    }
-                    
+                   
+                    NutritionInfoView(title: "Calories", value: appetizer.calories)
+                    NutritionInfoView(title: "Carbs", value: appetizer.carbs)
+                    NutritionInfoView(title: "Protein", value: appetizer.protein)
+                
                 }
             }
             
             Spacer()
             
             Button {
-                print("Button Tapped")
+                self.isShowingDetail = false
+                order.add(appetizer: appetizer)
             }label: {
-                Text("$\(appetizer.price, specifier: "%.2f") - Add to Order")
-                    .font(.title3)
-                    .fontWeight(.semibold)
-                    .frame(width: 260, height: 50)
-                    .foregroundStyle(Color.white)
-                    .background(Color.brandPrimary)
-                    .clipShape(RoundedRectangle(cornerRadius: 10))
-                
+                APButton(title: "$\(appetizer.price , specifier: "%.2f") - Add to Cart")
             }
             .padding(.bottom, 30)
         }
@@ -90,23 +54,36 @@ struct AppetizerDetailView: View {
         .clipShape(RoundedRectangle(cornerRadius: 12))
         .shadow(radius: 40)
         .overlay(Button {
-            print("dismiss")
+            self.isShowingDetail = false
         } label: {
-            ZStack {
-                Circle()
-                    .frame(width: 30, height: 30)
-                    .foregroundStyle(Color(.white))
-                    .opacity(0.6)
-                    
-                Image(systemName: "xmark")
-                    .imageScale(.small)
-                    .frame(width: 44, height: 44)
-                    .foregroundStyle(Color.black)
-            }
+            XDismissButton()
         }, alignment: .topTrailing)
     }
 }
 
 #Preview {
-    AppetizerDetailView(appetizer: MockData.sampleAppetizer)
+    AppetizerDetailView(appetizer: MockData.sampleAppetizer, isShowingDetail: .constant(true))
+}
+
+struct NutritionInfoView: View {
+    
+    let title: String
+    let value: Int
+
+    
+    var body: some View {
+        
+        VStack(spacing: 5) {
+            Text(title)
+                .font(.caption)
+                .fontWeight(.bold)
+            
+            Text("\(value   )")
+                .foregroundStyle(Color.secondary)
+                .fontWeight(.semibold)
+                .italic()
+            
+        }
+        
+    }
 }
